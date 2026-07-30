@@ -34,4 +34,7 @@ func main(){
 
   fmt.Println(isLogged,isAdmin,hasSubscription)
 
+  // 4. ************ AAND && ************
+  
+
 }
