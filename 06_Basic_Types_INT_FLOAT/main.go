@@ -34,7 +34,38 @@ func main(){
 
   fmt.Println(isLogged,isAdmin,hasSubscription)
 
-  // 4. ************ AAND && ************
+  //output: true false true
+
+  // 4. ************ AND && ************
+  canOpenDashboard := isLogged && hasSubscription
   
+
+  // 5. ************ OR || ************
+
+  canDeletePost := isAdmin || (isLogged && hasSubscription)
+
+  fmt.Println(canOpenDashboard, canDeletePost)
+
+  // output: true true
+
+  age := 20
+  isAdult := age >= 18
+  fmt.Println(isAdult)
+  //output: true
+
+  // Constants
+
+  // Constants are immutable values which are known at compile time and do not change for the life of the program.
+
+  const Pi = 3.14
+  fmt.Println(Pi)
+
+  // See this example of constant declaration. The compiler will throw an error if you try to reassign a value to a constant.
+  Pi := 2123
+  fmt.Println(Pi)
+
+  // Output
+  // command-line-arguments
+  // .\main.go:63:3: cannot assign to Pi
 
 }
